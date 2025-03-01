@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PGP Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form>
+        <label for="pgpKey">Paste Your PGP Public Key:</label>
+        <textarea
+          id="pgpKey"
+          name="pgpKey"
+          rows="5"
+          placeholder="BEGIN PGP PUBLIC KEY BLOCK"
+        ></textarea>
+
+        <button>
+          <a href="index.html" style="text-decoration: none; color: white"
+            >authenticate</a
+          >
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

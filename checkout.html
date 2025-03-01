@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - My Store</title>
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <h2>Secure Checkout</h2>
+      <div class="checkout-grid">
+        <!------------------- Order Summary -------------------->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="total">
+            <p>Subtotal: <span>Bitcoin $49.99</span></p>
+            <p>Shipping: <span>Bitcoin $5.00</span></p>
+            <p>
+              <strong>Total: <span>Bitcoin $54.99</span></strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- ------------------Checkout Form -------------------->
+        <div class="checkout-form">
+          <h3>Billing Details</h3>
+          <form action="order-confirmation.html" method="post">
+            <div class="form-group">
+              <label for="name">PGP ID </label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="address">Shipping Address</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+            <h3>Payment Method</h3>
+            <div class="form-group">
+              <label
+                ><input type="radio" name="payment" value="bitcoin" checked />
+                Bitcoin</label
+              >
+              <label
+                ><input type="radio" name="payment" value="crypto" />
+                Cryptocurrency</label
+              >
+            </div>
+            <button type="submit" class="checkout-btn">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
